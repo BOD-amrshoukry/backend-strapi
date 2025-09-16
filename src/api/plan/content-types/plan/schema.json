@@ -1,13 +1,13 @@
 {
   "kind": "collectionType",
-  "collectionName": "members",
+  "collectionName": "plans",
   "info": {
-    "singularName": "member",
-    "pluralName": "members",
-    "displayName": "Member"
+    "singularName": "plan",
+    "pluralName": "plans",
+    "displayName": "Plan"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {
     "i18n": {
@@ -19,53 +19,44 @@
       "type": "string",
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
-      },
-      "required": true
+      }
     },
-    "email": {
-      "type": "email",
+    "description": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
-      },
-      "required": true,
-      "unique": true
+      }
     },
-    "password": {
-      "type": "password",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "required": false
-    },
-    "role": {
-      "type": "enumeration",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "default": "employee",
-      "enum": [
-        "employee",
-        "manager",
-        "admin"
-      ]
-    },
-    "refreshToken": {
-      "type": "string",
+    "isActive": {
+      "type": "boolean",
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       }
     },
-    "tokenVersion": {
+    "planId": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "unique": false
+    },
+    "features": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "price": {
       "type": "integer",
       "pluginOptions": {
         "i18n": {
