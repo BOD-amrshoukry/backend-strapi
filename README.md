@@ -6,6 +6,12 @@ This repository contains the **Strapi backend** for the ticketing system dashboa
 
 ---
 
+## Quick Access
+
+To access the **Strapi Admin Panel** after running the server, use the following development credentials:
+- Email: trialbod87@gmail.com
+- Password: Bod123456
+
 ## Table of Contents
 
 - [Features](#features)
